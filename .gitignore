@@ -1,9 +1,12 @@
-.tmp/
-.bin/
-.idea/
-.gitignore
-air
-.tpm/
-.env
-.env.local
-client_secret_451701370425-uksccofua5c2ls912j9e0o68imdc3i6d.apps.googleusercontent.com.json
+# Ignore temporary files and directories
+/website/tmp/
+
+# Ignore IDE-related files and directories
+/website/.idea/
+
+# Ignore Git-related files
+/website/.gitignore
+
+# Ignore configuration files
+/website/backend/config/.env
+/website/backend/config/client_secret_451701370425-uksccofua5c2ls912j9e0o68imdc3i6d.apps.googleusercontent.com.json
