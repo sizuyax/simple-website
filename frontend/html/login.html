@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akeman</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-repeat: no-repeat;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        form {
+            margin: 0 auto; /* центрирование формы */
+            width: 300px;
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            text-align: left;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box; /* чтобы ширина ввода включала padding и border */
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #333333;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #333333;
+        }
+
+        .link-container {
+    text-align: center; /* Центрируем элементы в контейнере */
+    margin-top: 20px; /* Отступ сверху */
+}
+
+.link {
+    color: #333333; /* Цвет ссылки */
+    text-decoration: underline; /* Добавляем подчеркивание */
+    transition: color 0.3s; /* Плавное изменение цвета при наведении */
+}
+
+.link:hover {
+    color: #333333;
+}
+
+    </style>
+</head>
+<body>
+    <h2>Добро пожаловать</h2>
+    <form action="/home" method="post">
+
+        <label for="username">Имя пользователя:</label>
+        <input type="text" id="username" name="username">
+
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password">
+
+        <input type="submit" value="Войти">
+
+    </form>
+
+    <div class="link-container">
+        <a href="/registration" class="link">Регистрация</a>
+    </div>
+</body>
+</html>

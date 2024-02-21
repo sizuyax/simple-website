@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akeman</title>
+    <style>
+        /* Стили для всего сайта */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Стили для заголовка и навигации */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Стили для основного содержимого */
+main {
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* Стили для статьи */
+.article {
+    margin-bottom: 40px;
+}
+
+.article h2 {
+    margin-top: 0;
+}
+
+.article p {
+    margin-bottom: 10px;
+}
+
+.article a {
+    color: #333;
+    text-decoration: none;
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.article a:hover {
+    background-color: #ccc;
+}
+
+/* Стили для подвала */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    position: static;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Akeman</h1>
+        <nav>
+            <ul>
+                <li><a href="/home">Главная</a></li>
+                <li><a href="/about">О нас</a></li>
+                <li><a href="/contacts">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {{ range . }}
+        <section class="article">
+            <h1>{{.Description}}</h1>
+        </section>
+        {{ end }}
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Akeman </p>
+    </footer>
+</body>
+</html>
